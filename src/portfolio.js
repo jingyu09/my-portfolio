@@ -19,12 +19,12 @@ const seo = {
 
 //Home Page
 const greeting = {
-  title: "Hi all, I'm Jing Yu",
+  title: "Heng Jing Yu",
   logo_name: "HengJingYu",
   nickname: "jingyu09",
   subTitle:
-    "Year 2 Computer Science (Information Systems) student at the University of Malaya with a strong foundation in backend development, Java, and database systems. Experienced in building high-concurrency systems and managing project logistics. Quick learner, adaptable, and comfortable working in multilingual environments (Fluent in English, Chinese, and Malay; Conversational in French).",
-  resumeLink: "", // TODO: 填入简历 PDF 的云端链接
+    "Year 2 Computer Science student at University of Malaya, building high-concurrency backend systems with Java, Spring Boot, Redis and RabbitMQ.",
+  resumeLink: "",
   portfolio_repository: "https://github.com/jingyu09/my-portfolio",
   githubProfile: "https://github.com/jingyu09",
 };
