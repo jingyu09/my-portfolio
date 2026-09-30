@@ -159,6 +159,7 @@ const experience = {
   sections: [
     {
       title: "Leadership",
+      work: true,
       experiences: [
         {
           title: "HOD of Logistics",
