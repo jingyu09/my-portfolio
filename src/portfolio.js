@@ -1,8 +1,8 @@
-/* Change this file to get your personal Porfolio */
+/* Change this file to get your personal Portfolio */
 
 // Website related settings
 const settings = {
-  isSplash: true, // 如果你觉得每次刷新网页时的开场动画太浪费时间，可以把这里改成 false
+  isSplash: false, // 开场动画目前是模板作者的 "AH"，先关掉；换成自己的动画后再改回 true
 };
 
 //SEO Related settings
@@ -13,47 +13,49 @@ const seo = {
   og: {
     title: "Heng Jing Yu Portfolio",
     type: "website",
-    url: "https://github.com/jingyu09", // TODO: 等之后 Vercel 部署成功了，再换成 Vercel 给你生成的网址
+    url: "https://my-portfolio-jingyu3.vercel.app/",
   },
 };
 
 //Home Page
 const greeting = {
-  username: "HENG JING YU",
   title: "Hi all, I'm Jing Yu",
+  logo_name: "HengJingYu",
+  nickname: "jingyu09",
   subTitle:
     "Year 2 Computer Science (Information Systems) student at the University of Malaya with a strong foundation in backend development, Java, and database systems. Experienced in building high-concurrency systems and managing project logistics. Quick learner, adaptable, and comfortable working in multilingual environments (Fluent in English, Chinese, and Malay; Conversational in French).",
-  resumeLink: "YOUR_PDF_RESUME_LINK_HERE", // 请在此处填入简历PDF的云端链接
-  displayGreeting: true,
+  resumeLink: "", // TODO: 填入简历 PDF 的云端链接
+  portfolio_repository: "https://github.com/jingyu09/my-portfolio",
+  githubProfile: "https://github.com/jingyu09",
 };
 
 const socialMediaLinks = [
   {
     name: "Github",
     link: "https://github.com/jingyu09",
-    fontAwesomeIcon: "fab fa-github",
+    fontAwesomeIcon: "fa-github",
+    backgroundColor: "#181717",
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/heng-jing-yu-212015392",
-    fontAwesomeIcon: "fab fa-linkedin-in",
+    fontAwesomeIcon: "fa-linkedin-in",
+    backgroundColor: "#0077B5",
   },
   {
     name: "Gmail",
     link: "mailto:jingyu20958@gmail.com",
-    fontAwesomeIcon: "fas fa-envelope",
+    fontAwesomeIcon: "fa-google",
+    backgroundColor: "#D14836",
   },
 ];
 
 //Skills Page
-const skillsSection = {
-  title: "What I do",
-  subTitle:
-    "Backend Developer specializing in high-concurrency architecture and distributed systems.",
+const skills = {
   data: [
     {
       title: "Backend & Systems Architecture",
-      lottieAnimationFile: "build", // 模板自带的动画名
+      fileName: "FullStackImg",
       skills: [
         "⚡ Developing RESTful APIs and backend services using Java and Spring Boot",
         "⚡ Architecting high-concurrency systems using Redis, RabbitMQ, and MySQL",
@@ -61,136 +63,124 @@ const skillsSection = {
         "⚡ Handling load testing and performance impact validation using Apache JMeter",
       ],
       softwareSkills: [
-        { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
-        { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
-        { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
-        { skillName: "Database", fontAwesomeClassname: "fas fa-database" },
-        { skillName: "Git", fontAwesomeClassname: "fab fa-git" },
+        {
+          skillName: "Java",
+          fontAwesomeClassname: "simple-icons:openjdk",
+          style: { color: "#ED8B00" },
+        },
+        {
+          skillName: "Spring Boot",
+          fontAwesomeClassname: "simple-icons:springboot",
+          style: { color: "#6DB33F" },
+        },
+        {
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
+          style: { color: "#4479A1" },
+        },
+        {
+          skillName: "Redis",
+          fontAwesomeClassname: "simple-icons:redis",
+          style: { color: "#DC382D" },
+        },
+        {
+          skillName: "RabbitMQ",
+          fontAwesomeClassname: "simple-icons:rabbitmq",
+          style: { color: "#FF6600" },
+        },
+        {
+          skillName: "Apache JMeter",
+          fontAwesomeClassname: "simple-icons:apachejmeter",
+          style: { color: "#D22128" },
+        },
+        {
+          skillName: "Docker",
+          fontAwesomeClassname: "simple-icons:docker",
+          style: { color: "#1488C6" },
+        },
+        {
+          skillName: "Git",
+          fontAwesomeClassname: "simple-icons:git",
+          style: { color: "#F05032" },
+        },
+        {
+          skillName: "JavaScript",
+          fontAwesomeClassname: "simple-icons:javascript",
+          style: { backgroundColor: "#000000", color: "#F7DF1E" },
+        },
       ],
     },
   ],
-  display: true,
 };
 
 // Education Page
-const educationInfo = {
-  display: true,
-  schools: [
+const competitiveSites = {
+  competitiveSites: [],
+};
+
+const degrees = {
+  degrees: [
     {
-      schoolName: "University of Malaya",
-      logo: require("./assets/images/UM_logo.webp"),
-      subHeader: "Bachelor of Computer Science (Information System)",
+      title: "University of Malaya",
+      subtitle: "Bachelor of Computer Science (Information System)",
+      logo_path: "UM_logo.webp",
+      alt_name: "University of Malaya",
       duration: "Oct 2025 - Mar 2029",
-      desc: "CGPA: 3.90 | Core: OOP, Data Structures, Distributed Systems",
-      descBullets: [
-        "Specializing in high-concurrency architecture and backend development.",
+      descriptions: [
+        "⚡ CGPA: 3.90",
+        "⚡ Core courses: OOP, Data Structures, Distributed Systems.",
+        "⚡ Specializing in high-concurrency architecture and backend development.",
       ],
+      website_link: "https://www.um.edu.my/",
     },
     {
-      schoolName: "Johor Matriculation College",
-      logo: require("./assets/images/KMJ_logo.png"),
-      subHeader: "Computer Science Program",
+      title: "Johor Matriculation College",
+      subtitle: "Computer Science Program",
+      logo_path: "KMJ_logo.png",
+      alt_name: "Johor Matriculation College",
       duration: "2024 - 2025",
-      desc: "CGPA: 4.00",
+      descriptions: ["⚡ CGPA: 4.00"],
+      website_link: "https://kmj.matrik.edu.my/",
     },
   ],
 };
 
+const certifications = {
+  certifications: [],
+};
+
 // Experience Page
-const workExperiences = {
-  display: true,
-  experience: [
+const experience = {
+  title: "Experience",
+  subtitle: "Leadership and Volunteership",
+  description:
+    "I enjoy organising events and managing project logistics, turning tight budgets and deadlines into smooth execution.",
+  header_image_path: "experience.svg",
+  sections: [
     {
-      role: "HOD of Logistics",
-      company: "Mental Health Week 2025",
-      companylogo: require("./assets/images/PEKOM_logo.jpeg"),
-      date: "Oct 2025 – Dec 2025",
-      desc:
-        "Directed a logistics committee to execute end-to-end campus event operations for 178 attendees.",
-      descBullets: [
-        "Managed a strict RM3,000 budget by strategically procuring 85 essential items.",
-        "Developed an inventory tracking and financial budgeting system using Google Sheets.",
-        "Streamlined material distribution, achieving zero delivery delays.",
+      title: "Leadership",
+      experiences: [
+        {
+          title: "HOD of Logistics",
+          company: "Mental Health Week 2025",
+          company_url: "https://www.um.edu.my/",
+          logo_path: "PEKOM_logo.jpeg",
+          duration: "Oct 2025 - Dec 2025",
+          location: "Kuala Lumpur, Malaysia",
+          description:
+            "Directed a logistics committee to execute end-to-end campus event operations for 178 attendees. Managed a strict RM3,000 budget by strategically procuring 85 essential items, developed an inventory tracking and financial budgeting system using Google Sheets, and streamlined material distribution with zero delivery delays.",
+          color: "#1F70C1",
+        },
       ],
     },
   ],
 };
 
 // Projects Page
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME OF MY FEATURED ARCHITECTURAL WORK",
-  projects: [
-    {
-      image: require("./assets/images/BlueprintSeckill.png"),
-      projectName: "Blueprint Seckill",
-      projectDesc:
-        "Designed and engineered a 4-layer high-concurrency architecture (Rate Limiting ➔ Redis ➔ MQ ➔ MySQL) independently to handle massive traffic spikes.",
-      footerLink: [
-        {
-          name: "View Project",
-          url: "https://jingyu09.github.io/blueprint-seckill",
-        },
-      ],
-      descBullets: [
-        "Solved critical race conditions and overselling issues by implementing Redis + Lua scripting.",
-        "Optimized system throughput by decoupling database writes via RabbitMQ.",
-        "Validated a 0% error rate under high-stress JMeter load testing.",
-      ],
-    },
-  ],
-  display: true,
-};
-
-// Competitive programming sites
-const competitiveSites = {
-  competitiveSites: [],
-};
-
-// Certifications
-const certifications = {
-  certifications: [],
-};
-
-const achievementSection = {
-  title: "",
-  subtitle: "",
-  achievementsCards: [],
-  display: false,
-};
-const blogSection = {
-  title: "",
-  subtitle: "",
-  displayMediumBlogs: "false",
-  blogs: [],
-  display: false,
-};
-const talkSection = { title: "", subtitle: "", talks: [], display: false };
-const podcastSection = { title: "", subtitle: "", podcast: [], display: false };
-const openSource = {
-  githubConvertedToken: "",
-  githubUserName: "jingyu09",
-  display: false,
-};
-const degrees = { degrees: [], display: false };
-const skills = skillsSection; // 直接复用已有的技能内容
-const contactInfo = {
-  title: "Contact Me",
-  subtitle: "",
-  number: "+6011-5369-1109",
-  email_address: "jingyu20958@gmail.com",
-};
-const experience = {
-  title: "Experience",
-  subtitle: "",
-  description: "",
-  header_image_path: "experience.svg",
-  sections: [],
-};
-
 const projectsHeader = {
   title: "Projects",
-  description: "Some of my backend and systems projects.",
+  description:
+    "Some of my backend and systems projects, focused on high-concurrency architecture and database optimization.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -212,12 +202,18 @@ const contactPageData = {
     description:
       "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Backend Architecture, Java Spring Boot, High-Concurrency Systems, and Database Optimization.",
   },
+  blogSection: {
+    title: "GitHub",
+    subtitle: "Check out my projects and code on GitHub.",
+    link: "https://github.com/jingyu09",
+    avatar_image_path: "blogs_image.svg",
+  },
   addressSection: {
     title: "Address",
-    subtitle: "Kuala Lumpur, Selangor, Malaysia",
+    subtitle: "University of Malaya, Kuala Lumpur, Malaysia",
     locality: "Kuala Lumpur",
     country: "Malaysia",
-    region: "Selangor",
+    region: "Kuala Lumpur",
     postalCode: "",
     streetAddress: "University of Malaya",
     avatar_image_path: "address_image.svg",
@@ -234,23 +230,13 @@ export {
   seo,
   greeting,
   socialMediaLinks,
-  skillsSection,
-  educationInfo,
-  certifications,
-  competitiveSites,
-  workExperiences,
-  bigProjects,
-  contactPageData,
-  achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  openSource,
-  degrees,
   skills,
-  contactInfo,
+  competitiveSites,
+  degrees,
+  certifications,
   experience,
   projectsHeader,
   publicationsHeader,
   publications,
+  contactPageData,
 };
