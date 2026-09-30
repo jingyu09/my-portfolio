@@ -22,7 +22,7 @@ const greeting = {
   username: "HENG JING YU",
   title: "Hi all, I'm Jing Yu",
   subTitle:
-    "Year 2 Computer Science (Information Systems) student at the University of Malaya with a strong foundation in backend development, Java, and database systems.[cite: 1] Experienced in building high-concurrency systems and managing project logistics.[cite: 1] Quick learner, adaptable, and comfortable working in multilingual environments (Fluent in English, Chinese, and Malay; Conversational in French).",
+    "Year 2 Computer Science (Information Systems) student at the University of Malaya with a strong foundation in backend development, Java, and database systems. Experienced in building high-concurrency systems and managing project logistics. Quick learner, adaptable, and comfortable working in multilingual environments (Fluent in English, Chinese, and Malay; Conversational in French).",
   resumeLink: "YOUR_PDF_RESUME_LINK_HERE", // 请在此处填入简历PDF的云端链接
   displayGreeting: true,
 };
@@ -172,13 +172,9 @@ export {
   seo,
   greeting,
   socialMediaLinks,
-  skills,
-  competitiveSites,
-  degrees,
-  certifications,
-  experience,
-  projectsHeader,
-  publicationsHeader,
-  publications,
+  skillsSection,
+  educationInfo,
+  workExperiences,
+  bigProjects,
   contactPageData,
 };
