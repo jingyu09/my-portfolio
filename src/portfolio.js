@@ -54,18 +54,19 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Backend & Systems Architecture",
+      title: "Backend Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Developing RESTful APIs and backend services using Java and Spring Boot",
-        "⚡ Architecting high-concurrency systems using Redis, RabbitMQ, and MySQL",
-        "⚡ Optimizing databases and integrating middleware for distributed systems",
-        "⚡ Handling load testing and performance impact validation using Apache JMeter",
+        "⚡ Built the backend of a high-concurrency flash-sale system (Blueprint Seckill) using Java and Spring Boot",
+        "⚡ Prevented overselling under concurrent requests using Redis + Lua scripting for atomic inventory deductions",
+        "⚡ Decoupled database writes with RabbitMQ and kept data consistent using Snowflake IDs and MySQL unique indexes",
+        "⚡ Validated the system with Apache JMeter load testing, reaching a 0% error rate with zero oversold items",
+        "⚡ Developed a Vanilla JS frontend console for real-time order polling",
       ],
       softwareSkills: [
         {
           skillName: "Java",
-          fontAwesomeClassname: "simple-icons:openjdk",
+          fontAwesomeClassname: "logos:java",
           style: { color: "#ED8B00" },
         },
         {
@@ -171,6 +172,28 @@ const experience = {
           description:
             "Directed a logistics committee to execute end-to-end campus event operations for 178 attendees. Managed a strict RM3,000 budget by strategically procuring 85 essential items, developed an inventory tracking and financial budgeting system using Google Sheets, and streamlined material distribution with zero delivery delays.",
           color: "#1F70C1",
+        },
+        {
+          title: "7S Exco Kerohanian",
+          company: "Kolej Matrikulasi Johor",
+          company_url: "https://www.kmj.matrik.edu.my/",
+          logo_path: "KMJ_logo.png",
+          duration: "Jul 2024 - May 2025",
+          location: "Tangkak, Johor",
+          description:
+            "Served as a member of the 7S Exco under the Student Representative Council (Jawatankuasa Perwakilan Pelajar) for the 2024/2025 session. Acted as a bridge between students and the Exco Kerohanian unit, coordinating meaningful and value-driven activities.",
+          color: "#C8102E",
+        },
+        {
+          title: "PAL Leader",
+          company: "Kolej Matrikulasi Johor",
+          company_url: "https://www.kmj.matrik.edu.my/",
+          logo_path: "KMJ_logo.png",
+          duration: "Jul 2024 - May 2025",
+          location: "Tangkak, Johor",
+          description:
+            "Facilitated peer learning sessions to help students strengthen their understanding of core subjects.",
+          color: "#C8102E",
         },
       ],
     },
