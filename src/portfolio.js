@@ -142,6 +142,68 @@ const bigProjects = {
   display: true,
 };
 
+// Competitive programming sites
+const competitiveSites = {
+  competitiveSites: [],
+};
+
+// Certifications
+const certifications = {
+  certifications: [],
+};
+
+const achievementSection = {
+  title: "",
+  subtitle: "",
+  achievementsCards: [],
+  display: false,
+};
+const blogSection = {
+  title: "",
+  subtitle: "",
+  displayMediumBlogs: "false",
+  blogs: [],
+  display: false,
+};
+const talkSection = { title: "", subtitle: "", talks: [], display: false };
+const podcastSection = { title: "", subtitle: "", podcast: [], display: false };
+const openSource = {
+  githubConvertedToken: "",
+  githubUserName: "jingyu09",
+  display: false,
+};
+const degrees = { degrees: [], display: false };
+const skills = skillsSection; // 直接复用已有的技能内容
+const contactInfo = {
+  title: "Contact Me",
+  subtitle: "",
+  number: "+6011-5369-1109",
+  email_address: "jingyu20958@gmail.com",
+};
+const experience = {
+  title: "Experience",
+  subtitle: "",
+  description: "",
+  header_image_path: "experience.svg",
+  sections: [],
+};
+
+const projectsHeader = {
+  title: "Projects",
+  description: "Some of my backend and systems projects.",
+  avatar_image_path: "projects_image.svg",
+};
+
+const publicationsHeader = {
+  title: "Publications",
+  description: "",
+  avatar_image_path: "projects_image.svg",
+};
+
+const publications = {
+  data: [],
+};
+
 // Contact Page
 const contactPageData = {
   contactSection: {
@@ -174,7 +236,21 @@ export {
   socialMediaLinks,
   skillsSection,
   educationInfo,
+  certifications,
+  competitiveSites,
   workExperiences,
   bigProjects,
   contactPageData,
+  achievementSection,
+  blogSection,
+  talkSection,
+  podcastSection,
+  openSource,
+  degrees,
+  skills,
+  contactInfo,
+  experience,
+  projectsHeader,
+  publicationsHeader,
+  publications,
 };
