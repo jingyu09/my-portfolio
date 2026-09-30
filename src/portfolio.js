@@ -78,7 +78,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "University of Malaya",
-      logo: require("./assets/images/UM_logo.png"),
+      logo: require("./assets/images/UM_logo.webp"),
       subHeader: "Bachelor of Computer Science (Information System)",
       duration: "Oct 2025 - Mar 2029",
       desc: "CGPA: 3.90 | Core: OOP, Data Structures, Distributed Systems",
@@ -103,7 +103,7 @@ const workExperiences = {
     {
       role: "HOD of Logistics",
       company: "Mental Health Week 2025",
-      companylogo: require("./assets/images/PEKOM_logo.png"),
+      companylogo: require("./assets/images/PEKOM_logo.jpeg"),
       date: "Oct 2025 – Dec 2025",
       desc:
         "Directed a logistics committee to execute end-to-end campus event operations for 178 attendees.",
