@@ -1,16 +1,17 @@
 # Heng Jing Yu | Personal Portfolio
 
-Welcome to my personal portfolio website. 
+Personal portfolio website of Heng Jing Yu, a Year 2 Computer Science (Information Systems) student at University of Malaya, focusing on backend development with Java and Spring Boot, and high-concurrency systems.
 
-I am a Backend Developer focusing on high-concurrency architecture, Java Spring Boot, and database optimization.
+## 🌐 Live Website
 
-### 🌐 Live Website
-[https://my-portfolio-oo6as85ag-jingyu3.vercel.app](https://my-portfolio-oo6as85ag-jingyu3.vercel.app)
+https://my-portfolio-jingyu3.vercel.app
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
+
 - React.js
 - HTML5 / CSS3
-- Vercel Deployment
+- Deployed on Vercel
 
-### 🤝 Acknowledgments
-This portfolio is customized based on the excellent open-source template by [Ashutosh Hathidara](https://github.com/ashutosh1919/masterPortfolio).
+## 🤝 Acknowledgments
+
+This portfolio is customized based on the open-source template [masterPortfolio](https://github.com/ashutosh1919/masterPortfolio) by Ashutosh Hathidara (MIT License).

@@ -1,2 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
+Allow: /
+
+Sitemap: https://my-portfolio-umber-zeta-83.vercel.app/sitemap.xml
