@@ -75,7 +75,7 @@ body {
 img[src*="jingyu"] {
   border-radius: 50%;
   width: 100%;
-  max-width: 550px;
+  max-width: 490px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center top;

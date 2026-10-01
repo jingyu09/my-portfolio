@@ -203,9 +203,20 @@
   display: block;
 }
 
-.address-heading-img-div,
-.address-image-div {
-  transform: translateY(-60px) !important;
+/* Address 区块（只在电脑宽度生效，不影响手机） */
+@media (min-width: 769px) {
+  .address-heading-div {
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .address-heading-div .contact-heading-img-div {
+    transform: translateY(-30px);
+  }
+
+  .address-heading-text-div {
+    transform: translateY(20px);
+  }
 }
 
 .experience-heading-img-div > * {
