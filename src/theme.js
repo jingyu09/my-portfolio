@@ -195,4 +195,18 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = orangeTheme;
+export const jingyuOrangeTheme = {
+  body: "#FFF8F1",
+  text: "#431407",
+  expTxtColor: "#000a12",
+  highlight: "#FED7AA",
+  dark: "#1C0A03",
+  secondaryText: "#9A5B3A",
+  imageHighlight: "#F97316",
+  compImgHighlight: "#E6E6E6",
+  jacketColor: "#C2410C",
+  headerColor: "#F9731677",
+  splashBg: "#431407",
+};
+
+export const chosenTheme = jingyuOrangeTheme;
