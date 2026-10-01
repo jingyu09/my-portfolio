@@ -71,3 +71,20 @@ body {
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-color) transparent;
 }
+
+/* 头像：只显示圆形，并限制大小 */
+img[src*="jingyu"] {
+  clip-path: circle(47% at 50% 50%);
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* 首页标题缩小，避免顶到头像 */
+@media (min-width: 1025px) {
+  .greeting-text-div h1.greeting-text {
+    font-size: 56px;
+  }
+}
