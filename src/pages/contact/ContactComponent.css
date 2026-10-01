@@ -61,8 +61,17 @@
 }
 
 .blog-heading-img-div > * {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.address-heading-img-div > * {
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .contact-heading-text {
