@@ -72,17 +72,15 @@ body {
   scrollbar-color: var(--scrollbar-color) transparent;
 }
 
+/* 强制完美圆形裁剪并放大头像 */
 img[src*="jingyu"] {
-  border-radius: 50%;
-  border: 4px solid #111111;
-  background-color: transparent;
-  display: block;
+  border-radius: 50%; /* 网页自带的完美圆形裁剪刀 */
   width: 100%;
-  max-width: 550px;
-  aspect-ratio: 1 / 1;
-  /* 下面两行是填满空隙的关键 */
-  object-fit: cover;
-  object-position: center 10%; /* 往下平移一点，确保头顶不被切掉，同时填满底部 */
+  max-width: 550px; /* 确保照片足够大，撑起左侧排版（可微调至 600px） */
+  aspect-ratio: 1 / 1; /* 强制图片容器变成绝对正方形 */
+  object-fit: cover; /* 保证原图填满这个正方形 */
+  object-position: center top; /* 确保头部完整露出来 */
+  display: block;
   margin: 0 auto;
 }
 
