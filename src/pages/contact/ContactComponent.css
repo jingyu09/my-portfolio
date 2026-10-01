@@ -203,8 +203,9 @@
   display: block;
 }
 
-.address-heading-img-div {
-  margin-top: -50px;
+.address-heading-img-div,
+.address-image-div {
+  transform: translateY(-60px) !important;
 }
 
 .experience-heading-img-div > * {
