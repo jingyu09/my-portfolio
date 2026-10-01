@@ -141,7 +141,7 @@ const degrees = {
       alt_name: "Johor Matriculation College",
       duration: "2024 - 2025",
       descriptions: ["⚡ CGPA: 4.00"],
-      website_link: "https://kmj.matrik.edu.my/",
+      website_link: "https://www.kmj.matrik.edu.my/",
     },
   ],
 };
