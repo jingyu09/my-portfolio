@@ -232,8 +232,18 @@
     margin-top: 60px; /* GitHub 和 Address 与上一块的间距，两个数要一样 */
   }
 
+  /* GitHub 插画往下推，和上面的 Contact 区块拉开空隙：数字越大空隙越大 */
+  .blog-heading-img-div {
+    padding-top: 90px;
+  }
+
   /* Address 的插画下移一点点：数字越大越往下，不建议超过 40px */
   .address-heading-div .contact-heading-img-div {
     transform: translateY(20px);
+  }
+
+  /* 页面最下面给页脚留一点空间，避免插画贴着 "Made with" */
+  .address-heading-div {
+    margin-bottom: 40px;
   }
 }
