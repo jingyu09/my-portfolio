@@ -189,7 +189,7 @@
 }
 
 .blog-heading-img-div > * {
-  max-width: 80%;
+  max-width: 70%;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -198,6 +198,13 @@
 .address-heading-div img,
 .address-heading-div svg {
   max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.experience-heading-img-div > * {
+  max-width: 90%;
   height: auto;
   margin: 0 auto;
   display: block;
