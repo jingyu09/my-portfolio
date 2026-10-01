@@ -189,7 +189,7 @@
 }
 
 .blog-heading-img-div > * {
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -197,7 +197,7 @@
 
 .address-heading-div img,
 .address-heading-div svg {
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
   margin: 0 auto;
   display: block;
