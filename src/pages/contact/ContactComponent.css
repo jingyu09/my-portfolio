@@ -234,7 +234,7 @@
 
   /* GitHub 插画往下推，和上面的 Contact 区块拉开空隙：数字越大空隙越大 */
   .blog-heading-img-div {
-    padding-top: 90px;
+    padding-top: 115px;
   }
 
   /* Address 的插画下移一点点：数字越大越往下，不建议超过 40px */
