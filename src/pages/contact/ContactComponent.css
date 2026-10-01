@@ -204,7 +204,16 @@
 }
 
 .experience-heading-img-div > * {
-  max-width: 90%;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.projects-heading-img-div > *,
+.projects-heading-div img,
+.projects-heading-div svg {
+  max-width: 80%;
   height: auto;
   margin: 0 auto;
   display: block;

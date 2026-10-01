@@ -72,16 +72,17 @@ body {
   scrollbar-color: var(--scrollbar-color) transparent;
 }
 
-/* 头像：透明背景并添加黑色圆框 */
 img[src*="jingyu"] {
-  border-radius: 50%; /* 将图片的物理形状切成完美的正圆 */
-  border: 4px solid #111111; /* 添加类似于原作者的黑色实线边框 */
-  background-color: transparent; /* 允许网页自带的背景颜色透过来 */
+  border-radius: 50%;
+  border: 4px solid #111111;
+  background-color: transparent;
   display: block;
   width: 100%;
-  max-width: 550px; /* 保持大尺寸撑起排版 */
-  aspect-ratio: 1 / 1; /* 强制锁定 1:1 的长宽比，防止变成椭圆 */
+  max-width: 550px;
+  aspect-ratio: 1 / 1;
+  /* 下面两行是填满空隙的关键 */
   object-fit: cover;
+  object-position: center 10%; /* 往下平移一点，确保头顶不被切掉，同时填满底部 */
   margin: 0 auto;
 }
 
