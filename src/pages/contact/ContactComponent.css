@@ -203,6 +203,10 @@
   display: block;
 }
 
+.address-heading-img-div {
+  margin-top: -50px;
+}
+
 .experience-heading-img-div > * {
   max-width: 80%;
   height: auto;
