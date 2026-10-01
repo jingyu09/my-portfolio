@@ -134,7 +134,7 @@ export const orangeTheme = {
   secondaryText: "#CC552A",
   imageHighlight: "#FF6B35",
   compImgHighlight: "#E6E6E6",
-  jacketColor: "#d7263d",
+  jacketColor: "#C2410C",
   headerColor: "#FF6B3577",
   splashBg: "#99401F",
 };
@@ -195,4 +195,4 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blueTheme;
+export const chosenTheme = orangeTheme;
