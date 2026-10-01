@@ -1,7 +1,8 @@
 {
   "private": true,
-  "name": "masterPortfolio",
+  "name": "hengjingyu-portfolio",
   "version": "0.1.0",
+  "author": "Heng Jing Yu",
   "homepage": ".",
   "scripts": {
     "build": "react-scripts --openssl-legacy-provider build",
