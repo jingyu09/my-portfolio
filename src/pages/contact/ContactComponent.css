@@ -203,22 +203,6 @@
   display: block;
 }
 
-/* Address 区块（只在电脑宽度生效，不影响手机） */
-@media (min-width: 769px) {
-  .address-heading-div {
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  .address-heading-div .contact-heading-img-div {
-    transform: translateY(-30px);
-  }
-
-  .address-heading-text-div {
-    transform: translateY(20px);
-  }
-}
-
 .experience-heading-img-div > * {
   max-width: 80%;
   height: auto;
@@ -233,4 +217,23 @@
   height: auto;
   margin: 0 auto;
   display: block;
+}
+
+/* 电脑宽度：三个区块统一对齐方式和间距（必须放在文件最末尾） */
+@media (min-width: 769px) {
+  .contact-heading-div,
+  .blog-heading-div,
+  .address-heading-div {
+    align-items: center; /* 文字和图片在垂直方向对齐到中线 */
+  }
+
+  .blog-heading-div,
+  .address-heading-div {
+    margin-top: 60px; /* GitHub 和 Address 与上一块的间距，两个数要一样 */
+  }
+
+  /* Address 的插画下移一点点：数字越大越往下，不建议超过 40px */
+  .address-heading-div .contact-heading-img-div {
+    transform: translateY(20px);
+  }
 }

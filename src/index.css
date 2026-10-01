@@ -80,7 +80,7 @@ img[src*="jingyu"] {
   object-fit: cover;
   object-position: center top;
   display: block;
-  margin: 0 auto 60px auto;
+  margin: 0 auto;
 }
 
 /* 首页标题缩小，避免顶到头像 */
