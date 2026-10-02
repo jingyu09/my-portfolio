@@ -1,0 +1,87 @@
+/* 顶部滚动进度条 */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  z-index: 10000;
+  pointer-events: none;
+  transition: width 0.1s linear;
+}
+
+/* 鼠标跟随的橙色光晕（仅电脑） */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  will-change: transform;
+}
+
+/* 导航栏：悬停和当前页显示橙色下划线 */
+.header .menu li a {
+  position: relative;
+}
+
+.header .menu li a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background-color: #f97316;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header .menu li a:hover::after,
+.header .menu li a.active::after {
+  width: 60%;
+  left: 20%;
+}
+
+/* 按钮：悬停上浮并出现橙色阴影 */
+.main-button {
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background-color 0.2s ease, color 0.2s ease;
+}
+
+.main-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(249, 115, 22, 0.35);
+}
+
+.main-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* 技能图标：悬停时弹起放大 */
+.software-skill-inline {
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.software-skill-inline:hover {
+  transform: translateY(-8px) scale(1.18);
+}
+
+/* 系统设置了"减少动态效果"时关闭这些动画 */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-progress,
+  .header .menu li a::after,
+  .main-button,
+  .software-skill-inline {
+    transition: none;
+  }
+
+  .cursor-glow {
+    display: none;
+  }
+}
