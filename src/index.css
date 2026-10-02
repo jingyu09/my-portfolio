@@ -89,3 +89,75 @@ img[src*="jingyu"] {
     font-size: 56px;
   }
 }
+
+/* ✨ 页面角落的闪烁装饰 */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.2);
+  }
+}
+
+html::before,
+html::after,
+body::before,
+body::after {
+  position: fixed;
+  font-size: 22px;
+  pointer-events: none;
+  z-index: 5;
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+html::before {
+  content: "✨";
+  top: 14%;
+  left: 3%;
+}
+
+html::after {
+  content: "💻";
+  top: 58%;
+  right: 3%;
+  animation-delay: 1.2s;
+}
+
+body::before {
+  content: "✨";
+  top: 82%;
+  left: 6%;
+  animation-delay: 2s;
+}
+
+body::after {
+  content: "🪄";
+  top: 30%;
+  right: 5%;
+  animation-delay: 0.6s;
+}
+
+/* 项目卡片：悬停时上浮并发光 */
+.repo-card-div {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.repo-card-div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(249, 115, 22, 0.28);
+}
+
+/* 系统设置了"减少动态效果"时关闭动画 */
+@media (prefers-reduced-motion: reduce) {
+  html::before,
+  html::after,
+  body::before,
+  body::after {
+    animation: none;
+  }
+}

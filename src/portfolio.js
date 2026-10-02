@@ -22,6 +22,11 @@ const greeting = {
   title: "Heng Jing Yu",
   logo_name: "HengJingYu",
   nickname: "jingyu09",
+  roles: [
+    "UM CS Student 💻",
+    "Backend Engineer 🪄",
+    "High-Concurrency Enthusiast 🎀",
+  ],
   subTitle:
     "Year 2 Computer Science student at University of Malaya, building high-concurrency backend systems with Java, Spring Boot, Redis and RabbitMQ.",
   resumeLink: "",
