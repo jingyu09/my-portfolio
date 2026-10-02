@@ -90,57 +90,6 @@ img[src*="jingyu"] {
   }
 }
 
-/* ✨ 页面角落的闪烁装饰 */
-@keyframes twinkle {
-  0%,
-  100% {
-    opacity: 0.15;
-    transform: scale(0.8);
-  }
-  50% {
-    opacity: 0.9;
-    transform: scale(1.2);
-  }
-}
-
-html::before,
-html::after,
-body::before,
-body::after {
-  position: fixed;
-  font-size: 22px;
-  pointer-events: none;
-  z-index: 5;
-  animation: twinkle 3s ease-in-out infinite;
-}
-
-html::before {
-  content: "✨";
-  top: 14%;
-  left: 3%;
-}
-
-html::after {
-  content: "💻";
-  top: 58%;
-  right: 3%;
-  animation-delay: 1.2s;
-}
-
-body::before {
-  content: "✨";
-  top: 82%;
-  left: 6%;
-  animation-delay: 2s;
-}
-
-body::after {
-  content: "🪄";
-  top: 30%;
-  right: 5%;
-  animation-delay: 0.6s;
-}
-
 /* 项目卡片：悬停时上浮并发光 */
 .repo-card-div {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -152,12 +101,44 @@ body::after {
   box-shadow: 0 14px 30px rgba(249, 115, 22, 0.28);
 }
 
+/* 插画：轻轻上下浮动，悬停时出现橙色光影 */
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.float-illustration {
+  animation: float-soft 6s ease-in-out infinite;
+  transition: filter 0.3s ease;
+}
+
+.float-illustration:hover {
+  filter: drop-shadow(0 12px 18px rgba(249, 115, 22, 0.3));
+}
+
+/* 联系页头像：悬停时放大并微微倾斜 */
+img[src*="jingyu"] {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+img[src*="jingyu"]:hover {
+  transform: scale(1.04) rotate(-2deg);
+  box-shadow: 0 16px 36px rgba(249, 115, 22, 0.35);
+}
+
 /* 系统设置了"减少动态效果"时关闭动画 */
 @media (prefers-reduced-motion: reduce) {
-  html::before,
-  html::after,
-  body::before,
-  body::after {
+  .float-illustration {
     animation: none;
+  }
+
+  .repo-card-div,
+  img[src*="jingyu"] {
+    transition: none;
   }
 }

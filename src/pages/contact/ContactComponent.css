@@ -185,7 +185,7 @@
   .address-heading-div {
     flex-direction: column;
     margin-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
 }
 
@@ -240,11 +240,11 @@
 
   /* Address 的插画下移一点点：数字越大越往下，不建议超过 40px */
   .address-heading-div .contact-heading-img-div {
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
 
   /* 页面最下面给页脚留一点空间，避免插画贴着 "Made with" */
   .address-heading-div {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 }
