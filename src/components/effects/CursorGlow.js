@@ -1,5 +1,8 @@
 import React, { useEffect, useRef } from "react";
 
+// 光晕的直径（像素）
+const SIZE = 150;
+
 export default function CursorGlow({ color }) {
   const glowRef = useRef(null);
 
@@ -20,8 +23,8 @@ export default function CursorGlow({ color }) {
         cancelAnimationFrame(frame);
       }
       frame = requestAnimationFrame(() => {
-        el.style.transform = `translate(${event.clientX - 150}px, ${
-          event.clientY - 150
+        el.style.transform = `translate(${event.clientX - SIZE / 2}px, ${
+          event.clientY - SIZE / 2
         }px)`;
         el.style.opacity = "1";
       });
@@ -48,7 +51,9 @@ export default function CursorGlow({ color }) {
       ref={glowRef}
       className="cursor-glow"
       style={{
-        background: `radial-gradient(circle, ${color}33 0%, transparent 70%)`,
+        width: SIZE,
+        height: SIZE,
+        background: `radial-gradient(circle, ${color}40 0%, transparent 70%)`,
       }}
     />
   );
