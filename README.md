@@ -4,7 +4,7 @@ Personal portfolio website of Heng Jing Yu, a Year 2 Computer Science (Informati
 
 ## 🌐 Live Website
 
-https://my-portfolio-jingyu3.vercel.app
+https://my-portfolio-umber-zeta-83.vercel.app
 
 ## 🛠️ Tech Stack
 

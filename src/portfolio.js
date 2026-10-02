@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Heng Jing Yu Portfolio",
     type: "website",
-    url: "https://my-portfolio-jingyu3.vercel.app/",
+    url: "https://my-portfolio-umber-zeta-83.vercel.app",
   },
 };
 
