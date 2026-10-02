@@ -1,0 +1,126 @@
+.fs-demo {
+  max-width: 760px;
+  margin: 40px auto 20px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.fs-toggle {
+  background: transparent;
+  border: 1px solid;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-family: "Google Sans Medium";
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fs-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(249, 115, 22, 0.25);
+}
+
+.fs-card {
+  margin-top: 18px;
+  padding: 24px;
+  border-radius: 14px;
+  text-align: left;
+  font-family: "Google Sans Regular";
+}
+
+.fs-intro {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.fs-modes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.fs-mode {
+  background: transparent;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-family: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.fs-mode-on {
+  background-color: rgba(249, 115, 22, 0.18);
+  font-weight: bold;
+}
+
+.fs-flow {
+  font-size: 14px;
+  margin-bottom: 14px;
+  min-height: 20px;
+}
+
+.fs-run {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-family: "Google Sans Medium";
+  font-size: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.fs-run:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.fs-run:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.fs-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.fs-stat {
+  text-align: center;
+}
+
+.fs-stat-value {
+  font-size: 32px;
+  font-family: "Google Sans Medium";
+}
+
+.fs-stat-label {
+  font-size: 13px;
+}
+
+.fs-note {
+  margin: 18px 0 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .fs-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fs-stat-value {
+    font-size: 26px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fs-toggle,
+  .fs-run {
+    transition: none;
+  }
+}
