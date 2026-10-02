@@ -154,17 +154,8 @@
     margin-top: 80px;
   }
 
-  .address-heading-div {
-    flex-direction: column;
-    margin-top: 60px;
-  }
-
   .blog-heading-text-div {
     margin-top: 40px;
-  }
-
-  .address-heading-text-div {
-    margin-top: 70px;
   }
 
   .contact-heading-div {
@@ -185,6 +176,16 @@
     margin-right: 0px;
     line-height: normal;
     text-align: center;
+  }
+
+  .address-heading-text-div {
+    margin-top: 10px;
+  }
+
+  .address-heading-div {
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
 }
 
